@@ -16,7 +16,7 @@ colorLine.setText('redWithBlue')
 .addStyle('underline')
 console.log(colorLine.getColorText()+'\r\n');
 ```
-will print :<span style="color:red;background:blue;"><u>redWithBlue</u></span>
+will print :<table><tr><td bgcolor=blue><font color=red><u>redWithBlue</u></font></td></tr></table>
 
 #more Example
 ```node
@@ -29,26 +29,26 @@ colorLine.setText('redWithBlue')
 .addStyle('underline')
 console.log(colorLine.getColorText()+'\r\n');
 ```
-will print :<span style="color:red;background:blue;"><u>redWithBlue</u></span>
+will print :<table><tr><td bgcolor=blue><font color=red><u>redWithBlue</u></font></td></tr></table>
 ```node
 //---------------addStyle------------------
 colorLine.addStyle('inverse')
 .addStyle('bold');
 console.log(colorLine.getColorText()+'\r\n');
 ```
-will print :<span style="color:blue;background:red;"><b><u>redWithBlue</u></b></span>
+will print :<table><tr><td bgcolor=red><font color=blue><b><u>redWithBlue</u></b></font></td></tr></table>
 ```node
 //---------------removeStyle------------------
 colorLine.removeStyle('underline');
 console.log(colorLine.getColorText()+'\r\n');
 ```
-will print :<span style="color:blue;background:red;"><b>redWithBlue</b></span>
+will print :<table><tr><td bgcolor=red><font color=blue><b>redWithBlue</b></font></td></tr></table>
 ```node
 //---------------clearStyle------------------
 colorLine.clearStyle();
 console.log(colorLine.getColorText()+'\r\n');
 ```
-will print :<span style="color:red;background:blue;">redWithBlue</span>
+will print :<table><tr><td><font>redWithBlue</font></td></tr></table>
 ```node
 //---------------open bright------------------
 //It looks more bright
@@ -57,19 +57,19 @@ colorLine.setText('redWithYellowANdBright')
 .setBackColor('yellow',true); //open bright
 console.log(colorLine.getColorText()+'\r\n');
 ```
-will print :<span style="color:red;background:blue;">redWithBlue</span>
+will print :<table><tr><td bgcolor=yellow><font color=red>redWithBlue</font></td></tr></table>
 ```node
 //---------------removeForeColor------------------
 colorLine.removeForeColor();
 console.log(colorLine.getColorText()+'\r\n');
 ```
-will print :<span style="background:blue;">redWithBlue</span>
+will print :<table><tr><td bgcolor=yellow><font>redWithBlue</font></td></tr></table>
 ```node
 //---------------removeBackColor------------------
 colorLine.removeBackColor();
 console.log(colorLine.getColorText()+'\r\n');
 ```
-will print :<span>redWithBlue</span>
+will print :<table><tr><td><font>redWithBlue</font></td></tr></table>
 ```node
 //---------------clearColor------------------
 colorLine.setText('redWithYellow')
@@ -80,8 +80,8 @@ colorLine.clearColor();
 console.log(colorLine.getColorText()+'\r\n');
 ```
 will print :
-<br/><span style="color:red;background:yellow;">redWithYellow</span>
-<br/><span>redWithYellow</span>
+<br/><table><tr><td bgcolor=yellow><font color=red>redWithYellow</font></td></tr></table>
+<br/><table><tr><td><font>redWithYellow</font></td></tr></table>
 ```node
 //---------------empty Text------------------
 colorLine.setText('      ')
@@ -89,7 +89,7 @@ colorLine.setText('      ')
 console.log(colorLine.getColorText()+'\r\n');
 ```
 will print :
-<span style="background:yellow;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<table><tr><td bgcolor=yellow><font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></td></tr></table>
 ```node
 //---------------INIT------------------
 colorLine.setText('blue')
