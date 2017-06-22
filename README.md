@@ -16,7 +16,8 @@ colorLine.setText('redWithBlue')
 .addStyle('underline')
 console.log(colorLine.getColorText()+'\r\n');
 ```
-will print :<table><tr><td bgcolor=blue><font color=red><u>redWithBlue</u></font></td></tr></table>
+will print :
+![basic](https://raw.githubusercontent.com/zy445566/color-line/master/image/basic.png)
 
 #more Example
 ```node
@@ -29,26 +30,26 @@ colorLine.setText('redWithBlue')
 .addStyle('underline')
 console.log(colorLine.getColorText()+'\r\n');
 ```
-will print :<table><tr><td bgcolor=blue><font color=red><u>redWithBlue</u></font></td></tr></table>
+will print :![basic](https://raw.githubusercontent.com/zy445566/color-line/master/image/basic.png)
 ```node
 //---------------addStyle------------------
 colorLine.addStyle('inverse')
 .addStyle('bold');
 console.log(colorLine.getColorText()+'\r\n');
 ```
-will print :<table><tr><td bgcolor=red><font color=blue><b><u>redWithBlue</u></b></font></td></tr></table>
+will print :![addStyle](https://raw.githubusercontent.com/zy445566/color-line/master/image/addStyle.png)
 ```node
 //---------------removeStyle------------------
 colorLine.removeStyle('underline');
 console.log(colorLine.getColorText()+'\r\n');
 ```
-will print :<table><tr><td bgcolor=red><font color=blue><b>redWithBlue</b></font></td></tr></table>
+will print :![removeStyle](https://raw.githubusercontent.com/zy445566/color-line/master/image/removeStyle.png)
 ```node
 //---------------clearStyle------------------
 colorLine.clearStyle();
 console.log(colorLine.getColorText()+'\r\n');
 ```
-will print :<table><tr><td><font>redWithBlue</font></td></tr></table>
+will print :![clearStyle](https://raw.githubusercontent.com/zy445566/color-line/master/image/clearStyle.png)
 ```node
 //---------------open bright------------------
 //It looks more bright
@@ -57,19 +58,19 @@ colorLine.setText('redWithYellowANdBright')
 .setBackColor('yellow',true); //open bright
 console.log(colorLine.getColorText()+'\r\n');
 ```
-will print :<table><tr><td bgcolor=yellow><font color=red>redWithBlue</font></td></tr></table>
+will print :![bright](https://raw.githubusercontent.com/zy445566/color-line/master/image/bright.png)
 ```node
 //---------------removeForeColor------------------
 colorLine.removeForeColor();
 console.log(colorLine.getColorText()+'\r\n');
 ```
-will print :<table><tr><td bgcolor=yellow><font>redWithBlue</font></td></tr></table>
+will print :![removeForeColor](https://raw.githubusercontent.com/zy445566/color-line/master/image/removeForeColor.png)
 ```node
 //---------------removeBackColor------------------
 colorLine.removeBackColor();
 console.log(colorLine.getColorText()+'\r\n');
 ```
-will print :<table><tr><td><font>redWithBlue</font></td></tr></table>
+will print :![removeBackColor](https://raw.githubusercontent.com/zy445566/color-line/master/image/removeBackColor.png)
 ```node
 //---------------clearColor------------------
 colorLine.setText('redWithYellow')
@@ -80,8 +81,7 @@ colorLine.clearColor();
 console.log(colorLine.getColorText()+'\r\n');
 ```
 will print :
-<br/><table><tr><td bgcolor=yellow><font color=red>redWithYellow</font></td></tr></table>
-<br/><table><tr><td><font>redWithYellow</font></td></tr></table>
+![clearColor](https://raw.githubusercontent.com/zy445566/color-line/master/image/clearColor.png)
 ```node
 //---------------empty Text------------------
 colorLine.setText('      ')
@@ -89,7 +89,7 @@ colorLine.setText('      ')
 console.log(colorLine.getColorText()+'\r\n');
 ```
 will print :
-<table><tr><td bgcolor=yellow><font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></td></tr></table>
+![emptyText](https://raw.githubusercontent.com/zy445566/color-line/master/image/emptyText.png)
 ```node
 //---------------INIT------------------
 colorLine.setText('blue')
@@ -98,7 +98,7 @@ console.log(colorLine.getColorText()+'\r\n');
 colorLine.init();//all clear
 console.log(colorLine.getColorText()+'\r\n');
 ```
-Nothing output,because
+Nothing output,because clear all
 
 # Styles
 * bold
