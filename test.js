@@ -2,7 +2,7 @@ const ColorLine = require('./index.js');
 let colorLine = new ColorLine();
 
 //---------------Basic USE------------------
-colorLine.setText('redWithGreen')
+colorLine.setText('redWithBlue')
 .setForeColor('red')
 .setBackColor('blue')
 .addStyle('underline')
