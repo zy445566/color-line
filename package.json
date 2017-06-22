@@ -1,0 +1,24 @@
+{
+  "name": "color-line",
+  "version": "1.0.0",
+  "description": "make command more beautiful",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zy445566/color-line.git"
+  },
+  "keywords": [
+    "command",
+    "line",
+    "color"
+  ],
+  "author": "zy445566",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zy445566/color-line/issues"
+  },
+  "homepage": "https://github.com/zy445566/color-line#readme"
+}
